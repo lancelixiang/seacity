@@ -1,0 +1,79 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 链接文字颜色 [disabled] 表示不可点击
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+a:active{
+
+}
+a.ui-nav,
+a.ui-btn,
+a.color-normal {
+    color: #555;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+a.color-white {
+    color: #fff;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+a.color-gray {
+    color: #999;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+a.color-dark {
+    color: #444;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+a.color-light-grey {
+    color: #d3d3d3;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+a.color-blue {
+    color: #3baccc;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+a.color-orange {
+    color: #ff9125;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+a.color-dark-orange {
+    color: #fc6826;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+a.color-red {
+    color: #d9382b;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+/*不可点击*/
+a.btn.disabled,
+fieldset[disabled] a.btn {
+    pointer-events: none;
+}

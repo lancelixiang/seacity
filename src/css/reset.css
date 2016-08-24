@@ -1,0 +1,225 @@
+/*******************重设浏览器默认样式开始*******************/
+
+html {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size:42.6px;
+}
+
+body {
+    width: 100%;
+    font: 14px/28px 'Microsoft YaHei', arial, sans-serif;
+    color: #555;
+    background-color: #fff;
+    -webkit-transition: .5S;
+    transition: .5S;
+    -webkit-overflow-scrolling:touch;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+table {
+    font-size: inherit;
+    color: inherit;
+}
+
+capation,
+th {
+    text-align: center;
+}
+
+q:before,
+q:after {
+    content: ' ';
+}
+
+input,
+img,
+abbr,
+acronym,
+iframe {
+    border: none;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    line-height: 1em;
+}
+
+abbr,
+acronym {
+    font-variant: normal;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: 80%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.75em;
+}
+
+sub {
+    bottom: 0em;
+}
+
+a {
+    display: inline-block;
+    line-height: 2em;
+    color: #777;
+    text-decoration: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /*-webkit-tap-highlight-color:rgba(0,0,0,0);*/
+}
+
+a:focus {
+    outline: none;
+}
+input, textarea, button{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input {
+    -webkit-appearance:none;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="password"]{
+    -webkit-appearance:none;
+    appearance:none;outline:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    border-radius:0;
+}
+input::-webkit-input-placeholder {
+    font-family: "Microsoft YaHei", serif, sans-serif;
+    color: #bebebe !important;
+}
+input,
+button {
+    font-family: "Microsoft YaHei", serif, sans-serif;
+    color: #777;
+    border: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    visibility: hidden;
+}
+
+input.ui-error,
+textarea.ui-error {
+    color: #d9382b !important;
+    border-color: #d9382b !important;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    line-height: 1.6em;
+    font-size: 0.86em;
+    color: #aaa;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    line-height: 1.6em;
+    font-size: 0.86em;
+    color: #999;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    line-height: 1.6em;
+    font-size: 0.86em;
+    color: #999;
+}
+
+input.ui-error::-webkit-input-placeholder,
+textarea.ui-error::-webkit-input-placeholder {
+    color: #d9382b;
+}
+
+input.ui-error:-moz-placeholder,
+textarea.ui-error:-moz-placeholder,
+input.ui-error::-moz-placeholder,
+textarea.ui-error::-moz-placeholder {
+    color: #d9382b;
+}
+
+input.ui-error:-ms-input-placeholder,
+textarea.ui-error:-ms-input-placeholder {
+    color: #d9382b;
+}
+
+/*******************重设浏览器默认样式结束*******************/

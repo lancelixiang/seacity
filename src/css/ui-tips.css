@@ -1,0 +1,29 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: UI组件dialog tips部分 弹窗类
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+.ui-tips {
+    max-width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ui-tips-cnt {
+    padding: 0.08rem 0.2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.24rem;
+    text-align: center;
+    border-radius: 3px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

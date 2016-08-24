@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>天玑汇富--404</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="/static/css/public/base.css" />
+	<script type="text/javascript" src="/static/js/public/zepto.min.js"></script>
+	<style>
+		html,
+		body {
+			height: 100%;
+			background-color: #f1ab5f;
+		}
+		
+		p {
+			margin: 0 10px;
+		}
+		
+		.p1 {
+			padding-top: 10px;
+			line-height: 40px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #333;
+		}
+		
+		.p2 {
+			line-height: 60px;
+			font-size: 30px;
+			color: #333;
+		}
+		
+		.p3 {
+			line-height: 28px;
+			font-size: 14px;
+			color: #fff;
+		}
+		
+		.a1 {
+			display: block;
+			height: 40px;
+			margin: 60px 10px 0 10px;
+			text-align: center;
+			line-height: 40px;
+			color: #fff;
+			background-color: #1cacc6;
+		}
+		
+		.bigmax {
+			position: absolute;
+			bottom: 0;
+		}
+		
+		#count_down {
+			display: inline-block;
+			width: 20px;
+			text-align: center;
+		}
+	</style>
+	<script>
+		$(function () {
+			var $count_down = $("#count_down"),
+				count_down = parseInt($count_down.text());
+			setInterval(function () {
+				count_down--;
+				if (count_down < 1) {
+					window.location.href = "/";
+				} else {
+					$count_down.text(count_down);
+				}
+			}, 1000);
+		});
+	</script>
+</head>
+
+<body>
+	<p class="p1">OH... PAGE NOT FOUND!!</p>
+	<p class="p2">哎呀...
+		<br />访问的页面不存在！
+	</p>
+	<a href="/" class="a1 ui-radius"><font id="count_down">15</font>秒后返回首页</a> <img src="/static/images/topic/error/bigmax.png" class="bigmax" />
+
+</body>
+
+</html>

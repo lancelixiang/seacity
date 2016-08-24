@@ -1,0 +1,71 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 表格常用样式
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+.ui-table {
+    margin: 0 auto;
+    width: 96%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+
+}
+.ui-table th {
+    font-weight: 500;
+}
+
+.ui-table td,
+.ui-table th {
+    padding:0.1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    text-align: center;
+    white-space: nowrap;
+    padding: 8px;
+}
+.table-scroll{
+    margin: auto;
+    width: 96%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*橙色*/
+.ui-table-orange th {
+    padding:0.1rem 0;
+    font-weight: 500;
+    color: #fff;
+    border-left: 1px solid #fff;
+    background: #ff9900;
+}
+.ui-table-orange tr:nth-child(2n){
+    background: #fff;
+}
+    /*表头为蓝色*/
+.ui-table-blue {
+    width: 100%;
+    border-collapse: collapse;
+}
+.ui-table-blue td {
+    padding:0.1rem 0;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+.ui-table-blue th {
+    padding:0.1rem 0;
+    font-weight: 500;
+    color: #fff;
+    border-left: 1px solid #fff;
+    background: #3baccc;
+}
+.ui-table-blue th:nth-child(1){
+    border-left:1px solid #3baccc;
+}
+.ui-table-blue tr:nth-child(1){
+    border:1px solid #3baccc;
+}

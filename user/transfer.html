@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海洋城--转账</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/public/base.css"/>
+    <script type="text/javascript" src="/static/js/public/base.min.js"></script>
+    <script>
+        $(function () {
+            //提款选择
+            var rollOut = ['我的大钱包', '我的中钱包','我的小钱包'];
+            $("#rollOut").picker({
+                title: "请选择转出的账户",
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values: rollOut,
+                    }
+                ],
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+            //转入
+            var rollIn = ['支付宝', '中国工商银行3'];
+            $("#rollIn").picker({
+                title: "请选择转入的账户",
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values: rollIn,
+                    }
+                ],
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+        })
+    </script>
+</head>
+<body class="bg-main ft-normal">
+    <header id="header"></header>
+    <table class="ui-table ui-table-orange _mt20">
+        <tr>
+            <th>游戏平台</th>
+            <th>账户余额</th>
+        </tr>
+        <tr>
+            <td>MG游戏厅</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>AG国际厅</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>PT老虎机</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>AG极速厅</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>BBIN波音</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <div class="box-wrap-list">
+        <div class="box-wrap-bg-white ft-30">
+            <div class="ui-form-item">
+                <label>转出:</label> <input type="text" placeholder="请输出存款金额" id="rollOut"/>
+                <span class="focus-bg"></span>
+                <i class="arrows icon-31fanhui2"></i>
+            </div>
+            <div class="ui-form-item">
+                <label>转入:</label> <input type="text" placeholder="请输入存款金额" id="rollIn"/>
+                <span class="focus-bg"></span>
+                <i class="arrows icon-31fanhui2"></i>
+            </div>
+            <div class="ui-form-item">
+                <label>存款金额:</label> <input type="text" placeholder="请输入存款金额"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item ui-form-item-r">
+                <input type="text" placeholder="请输入验证码"/>
+                <span class="focus-bg"></span>
+                <div class="vcode"><img src="/static/images/public/vcode.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrap _plr30 _mt90">
+        <a class="btn-lg btn-orange" href="#">确认付款</a>
+    </div>
+</body>
+</html>

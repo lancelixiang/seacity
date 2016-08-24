@@ -1,0 +1,233 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 常用input.text input.radio input.checkbox
+// |     <label class="ui-switch"> <input type="checkbox" checked> </label>
+// |     <label class="ui-checkbox"> <input type="checkbox"> </label>
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+/*开关(switch)控件*/
+.ui-switch {
+    display: inline-block;
+    font-size: 16px;
+    width: 0.8rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+
+.ui-switch input {
+    width: 0.8rem;
+    height: 0.5rem;
+    position: absolute;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.ui-switch input:before {
+    content: '';
+    width: 0.8rem;
+    height: 0.5rem;
+    border: 1px solid #d5d7d8;
+    background-color: #d5d7d8;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    -webkit-box-sizing: content-box;
+    border-color: #dfdfdf;
+    -webkit-box-shadow: #dfdfdf 0px 0px 0px 0px inset;
+    -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s;
+    -webkit-background-clip: content-box;
+}
+
+.ui-switch input:checked:before {
+    border-color: #3baccc;
+    -webkit-box-shadow: #3baccc 0px 0px 0px 16px inset;
+    background-color: #3baccc;
+    -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s, background-color 1.2s;
+    background-color: #3baccc;
+}
+
+.ui-switch input:checked:after {
+    left: 21px;
+}
+
+.ui-switch input:after {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    border-radius: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-transition: left 0.2s;
+}
+
+/*checkbox 选择控件*/
+
+.ui-checkbox,
+.ui-checkbox-sm {
+    display: inline-block;
+}
+
+.ui-checkbox input,
+.ui-checkbox-sm input {
+    padding-left: 0;
+    display: block;
+    width: 0.55rem;
+    height: 0.55rem;
+    position: relative;
+    overflow: visible;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.ui-checkbox input:before,
+.ui-checkbox-sm input:before {
+    font-family: "ico" !important;
+    font-size: 0.55rem;
+    line-height: 0.55rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    content: "\e603";
+    color: #18b4ed;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #dedfe0;
+    transition: all 0.2s;
+}
+
+.ui-checkbox input:checked:before,
+.ui-checkbox-sm input:checked:before {
+    content: "\e600";
+    color: #3baccc;
+}
+
+.ui-checkbox-sm input:before {
+    font-size:0.36rem;
+    content: "\e603";
+}
+
+.ui-checkbox-sm input:checked:before {
+    font-size:0.36rem;
+    content: "\e600";
+}
+/*普通输入框 左右侧有元素*/
+.ui-form-wrap{
+    border-top:1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    background: #ffffff;
+    padding-left:0.32rem;
+}
+.ui-form-item{
+    padding-bottom:0.3rem;
+    padding-top:0.3rem;
+    position: relative;
+    line-height:0.48rem;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+}
+.ui-form-item:last-child{
+    border-bottom: none;
+}
+.ui-form-item label{
+    position: absolute;
+    display: block;
+    height:0.48rem;
+    line-height:0.48rem;
+    font-size:0.3rem;
+    color: #193a5d;
+    text-align: right;
+}
+.ui-form-item input{
+    position: relative;
+    width:100%;
+    height:0.48rem;
+    line-height:0.48rem;
+    font-size:0.3rem;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 0;
+    background: 0 0;
+    padding-left: 1.6rem;
+    padding-right:2rem;
+    z-index: 2;
+}
+.ui-form-item input::-webkit-input-placeholder{
+    line-height:0.48rem;
+}
+.ui-form-item input:focus ~ .focus-bg{
+    width:100%;
+}
+.ui-form-item .focus-bg{
+    position: absolute;
+    top:0px;
+    left:1.5rem;
+    z-index: 1;
+    width:0px;
+    height:100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 0;
+    background: 0 0;
+    background: rgba(220,220,220,0.2);
+    transition: all 0.4s;
+}
+.ui-form-item .arrows{
+    position: absolute;
+    right:0.1rem;
+    top:0.3rem;
+    font-size:0.36rem;
+}
+/*右侧有元素*/
+.ui-form-item-r input{
+    padding-left:0.1rem;
+}
+
+.ui-form-item-r .focus-bg{
+    left:0px;
+}
+/*发送短信按钮*/
+.ui-form-item-r .sms{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    width:2rem;
+    height:100%;
+    line-height:1.1rem;
+    background: #3baccc;
+    text-align: center;
+    color: #fff;
+    font-size:0.28rem;
+    z-index: 3;
+}
+/*验证码*/
+.ui-form-item-r .vcode{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    width:2rem;
+    height:100%;
+    line-height:1.1rem;
+    background: #3baccc;
+    text-align: center;
+    color: #fff;
+    font-size:0.28rem;
+    z-index: 3;
+}
+.ui-form-item-r .vcode img{
+    width:100%;
+    height:100%;
+}

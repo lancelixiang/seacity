@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>海洋城--首页</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="/static/css/public/base.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/public/swiper.min.css" />
+	<script type="text/javascript" src="/static/js/public/base.min.js"></script>
+	<script type="text/javascript" src="/static/js/public/swiper.min.js"></script>
+	<style>
+		body{
+			margin-bottom:1.2rem;
+		}
+		img{
+			display: block;
+		}
+		.ui-header{
+			padding: 0.15rem 0;
+		}
+		.ui-header >section{
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: flex;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			-webkit-box-align: center;
+			align-items: center;
+		}
+        .ui-header >section .logout{
+            overflow: hidden;
+        }
+        .ui-header > section span{
+            display: inline-block;
+            vertical-align: top;
+            max-width:2rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+		.logo {
+			padding-left:0.2rem;
+			width: auto;
+			height: 0.6rem;
+		}
+		.swiper-slide {
+			display: block;
+		}
+		.box-wrap-bg-white{
+			padding-left:0px;
+			border: none;
+		}
+		.hot-box h1,
+		.game-box h1{
+			padding-top:0.1rem;
+			font-size:0.3rem;
+			color: #444;
+			padding-left:0.2rem;
+			border-bottom: 1px solid #ddd;
+		}
+		.hot-box .ui-row,
+		.game-box .ui-row{
+			padding:0.2rem 0.1rem;
+		}
+		.hot-box .ui-col{
+			padding:0.1rem;
+		}
+		.hot-box .box{
+
+			border: 0.1rem solid #2a8fbd;
+			background-color: #092448;
+		}
+		.game-box .ui-col{
+			padding: 0.1rem 0;
+			position: relative;
+		}
+		.game-box .ui-col img{
+			box-shadow: 0 0 3px #092448;
+		}
+		.game-box h3{
+			position: absolute;
+			top:0.1rem;
+			left:0px;
+			width:100%;
+			height:1rem;
+			line-height:1rem;
+			text-align: center;
+			color: #fff;
+			font-size:0.28rem;
+			font-weight:normal;
+			background: rgba(42,143,189,0.5);
+		}
+	</style>
+	<script>
+		$(function () {
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				autoplay: 5000,
+				loop: true,
+				autoplayDisableOnInteraction: false
+			});
+
+		});
+	</script>
+</head>
+
+<body class="">
+	<header class="ui-header bg-white">
+		<div>
+            <img class="logo" alt="天玑汇富" src="/static/images/public/logo.png" />
+		</div>
+		<section class="username">
+			<!--未登录-->
+            <div class="logout">
+                <a href="/login.html" class="color-dark fr plr10">登录</a>
+				<a href="/register.html" class="color-dark fr plr10">注册</a>
+            </div>
+			<!--已登陆-->
+<!--            <a href="/user" class="color-dark ft-28 _pr30">
+                你好,<span class="color-blue">够了</span>!
+            </a>-->
+		</section>
+	</header>
+
+	<div class="bg-white swiper-container">
+		<div class="banner-wrapper swiper-wrapper">
+			<a href="/topic/" class="swiper-slide">
+				<img src="/static/images/banner/0.jpg" />
+			</a>
+			<a href="/topic/" class="swiper-slide">
+				<img src="/static/images/banner/1.jpg" />
+			</a>
+			<a href="/topic/" class="swiper-slide">
+				<img src="/static/images/banner/2.jpg" />
+			</a>
+		</div>
+		<ul class="swiper-pagination">
+		</ul>
+	</div>
+	<!--推荐于热门-->
+	<div class="box-wrap-list hot-box">
+		<div class="box-wrap-bg-white">
+			<h1 ><i class="icon-huore ft-40 color-orange"></i>推荐与热门</h1>
+			<div class="ui-row">
+				<a class="ui-col ui-col-50">
+					<div class="box"><img src="/static/images/index/hot0.png" alt=""></div>
+				</a>
+				<a class="ui-col ui-col-50">
+					<div class="box"><img src="/static/images/index/hot1.png" alt=""></div>
+				</a>
+				<a class="ui-col ui-col-50">
+					<div class="box"><img src="/static/images/index/hot2.png" alt=""></div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!--真人游戏-->
+	<div class="box-wrap-list game-box">
+		<div class="box-wrap-bg-white">
+			<h1><i class="icon-paiju ft-40 color-orange"></i>真人游戏</h1>
+			<div class="ui-row">
+				<div class="ui-col">
+					<h3>eBET人鱼厅</h3>
+					<img src="/static/images/index/mg.jpg" alt="">
+				</div>
+				<div class="ui-col">
+					<h3>AG浪潮厅</h3>
+					<img src="/static/images/index/ag.jpg" alt="">
+				</div>
+				<div class="ui-col">
+					<h3>MG珊瑚厅</h3>
+					<img src="/static/images/index/bbin.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--导航-->
+	<div class=""></div>
+    <div class="ui-tabbar-footer">
+		<div class="current">
+			<a href="/">
+				<div class="icons-box"><i class="icon-zhuye-copy"></i></div>
+				<span>首页</span>
+			</a>
+		</div>
+		<div>
+			<a href="/topic/live">
+				<div class="icons-box"><i class="icon-fanpai"></i></div>
+				<span>真人游戏</span>
+			</a>
+		</div>
+		<div>
+			<a href="/user/index.html">
+				<div class="icons-box"><i class="icon-renwu"></i></div>
+				<span>个人中心</span>
+			</a>
+		</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "path": {
+    "base":"../",
+    "fonts": "./fonts/*",
+    "js" : "./js",
+    "css" : "./css",
+    "sass" : "./sass",
+    "img" : "./img",
+    "lib" : "./lib",
+    "buildTmp": "./build/temp/"
+  },
+  "build": {
+    "js": "./build/js",
+    "css": "./build/css",
+    "fonts": "./build/fonts",
+    "img": "./build/img"
+  },
+  "concat" : {
+
+  },
+  "dist":{
+    "js":"../static/js/public/",
+    "css":"../static/css/public/"
+  },
+  "img": {
+
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海洋城--出入款记录</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/public/base.css"/>
+    <script type="text/javascript" src="/static/js/public/base.min.js"></script>
+    <style>
+        .ui-table-orange tr:nth-child(2n){
+            background: #f2f2f2;
+        }
+        .ui-form-item input{
+            padding-left: 1.7rem;
+            padding-right:0px;
+        }
+        .ui-form-item label{
+            background: #f0f2f5;
+            color: #232326;
+        }
+        .ui-form-item-33{
+            padding-top:0px;
+        }
+        .ui-form-item-33 input{
+            padding-left:0.8rem;
+        }
+        .ui-form-item-33 label{
+            background: transparent;
+            color: #232326;
+        }
+        .ui-row{
+
+            line-height:0.36rem;
+        }
+        .btn-wrap{
+            width:1.9rem;
+        }
+    </style>
+    <script>
+        $(function () {
+            //时间选择
+            $("#start,#end").calendar();
+            //类型
+            var type = ['类型1', '中国工商银行3', '中国工商银行3', '中国工商银行4'];
+            $("#type").picker({
+                title: "请选择选择银行",
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values: type,
+                    }
+                ],
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+            //状态
+            var status = ['状态', '中国工商银行3', '中国工商银行3', '中国工商银行4'];
+            $("#status").picker({
+                title: "请选择选择银行",
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values: status,
+                    }
+                ],
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+        })
+    </script>
+</head>
+<body class=" ft-normal">
+    <header id="header"></header>
+    <div class="box-wrap-list">
+        <div class="box-wrap-bg-white ft-30">
+            <div class="ui-row">
+                <div class="ui-col ui-col-50">
+                    <div class="ui-form-item">
+                        <label>选择日期<i class="icon-xiala1 ft-40"></i></label> <input type="text" placeholder="开始时间" id="start"/>
+                    </div>
+                </div>
+                <div class="ui-col ui-col-50">
+                    <div class="ui-form-item">
+                        <label>选择日期<i class="icon-xiala1 ft-40"></i></label> <input type="text" placeholder="开始时间" id="end"/>
+                    </div>
+                </div>
+                <div class="ui-col ui-col-33">
+                    <div class="ui-form-item ui-form-item-33">
+                        <label>类型:</i></label> <input type="text" placeholder="选择类型" id="type"/>
+                    </div>
+                </div>
+                <div class="ui-col ui-col-33">
+                    <div class="ui-form-item ui-form-item-33">
+                        <label>状态:</i></label> <input type="text" placeholder="选择状态" id="status"/>
+                    </div>
+                </div>
+                <div class="ui-col ui-col-33">
+                    <div class="btn-wrap">
+                        <div class="btn btn-sm btn-orange">查询</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-scroll">
+        <table class="ui-table ui-table-orange _mt20">
+            <tr>
+                <th>时间</th>
+                <th>平台</th>
+                <th>操作类型</th>
+                <th>平台</th>
+                <th>转入/出金额</th>
+                <th>钱包剩余额度</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>

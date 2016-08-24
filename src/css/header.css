@@ -1,0 +1,24 @@
+.ui-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.33rem 10px;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ui-header > span,
+.ui-header > a{
+    display: block;
+    line-height: 0.36rem;
+    color: #fff;
+}
+.ui-header > span{
+    font-size: 0.34rem;
+}

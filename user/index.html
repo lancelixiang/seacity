@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海洋城--个人中心</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/public/base.css"/>
+    <script type="text/javascript" src="/static/js/public/base.min.js"></script>
+    <style>
+
+        body{
+            margin-bottom:1.2rem;
+        }
+        .ui-header [class^='icon-']{
+            font-size:0.48rem;
+        }
+        .box-wrap-list{
+            font-size:0.32rem;
+        }
+        .box-wrap-list:last-child{
+            margin-bottom:0.5rem;
+        }
+        .ui-item{
+            padding-top:0.2rem;
+            padding-bottom:0.2rem;
+        }
+        [class^='icon-']{
+            font-size:0.36rem;
+            margin-right:0.1rem;
+            line-height:0.48rem;
+        }
+        .user-safety{
+            margin-left:0.2rem;
+            width:1.5rem;
+            height:1.5rem;
+            border-radius: 100%;
+            background: #fff;
+            border:3px solid #ffaa00;
+            text-align: center;
+        }
+        .user-safety h4{
+            font-weight:normal;
+        }
+        .user-safety p{
+            font-weight:bold;
+            font-size:0.28rem;
+        }
+
+        .pay,.withdraw{
+            display: block;
+            margin:0 auto;
+            width:1.45rem;
+            height:0.72rem;
+            line-height:0.72rem;
+            color: #fff;
+            box-sizing: border-box;
+            padding-left:0.86rem;
+            background: url("/static/images/user/pay.png") no-repeat;
+            background-size:auto 100%;
+        }
+        .pay{
+            background-position: 0 0;
+        }
+        .withdraw{
+            background-position: -1.5rem 0;
+        }
+    </style>
+</head>
+<body class="ft-normal">
+    <header class="ui-header bg-blue">
+        <a class="icon-home" href="/index.html"></a><span class="color-white">个人中心</span>
+        <a class="icon-qipai1" href="/topic/live"></a>
+    </header>
+    <div class="content-normal bg-light-blue color-white _pt50">
+        <div class="ui-row border-bottom-blue">
+
+            <div class="ui-col ui-col-40 ">
+
+                <div class="user-safety color-normal ft-24">
+                    <h4 class="ft-26">个人中心</h4>
+                    <p>安全指数</p>
+                    <span>20%</span>
+                </div>
+                <div class=" _pt10">  </div>
+                <span>欢迎您，李先生</span>
+            </div>
+            <ul class="ui-col ui-col-60 ft-28">
+                <li class="ui-col border-bottom-blue _pb10">
+                    <span class="ui-col ui-col-40">可用余额</span>
+                    <span class="ui-col ui-col-60 t-right">10,000,000.00</span>
+                </li>
+                <li class="ui-col border-bottom-blue _ptm10">
+                    <span class="ui-col ui-col-40">会员等级：</span>
+                    <span class="ui-col ui-col-60 t-right">初出江湖</span>
+                </li>
+                <li class="ui-col _ptm20">
+                    <span class="ui-col ui-col-40">手机号码</span>
+                    <span class="ui-col ui-col-60 t-right">159****6676</span>
+                </li>
+            </ul>
+        </div>
+        <div class=" ui-row ft-28">
+            <a class="ui-col ui-col-50 _ptm25" href="">
+                <span class="pay">存款</span>
+            </a>
+            <a class="ui-col ui-col-50 _ptm25" href="">
+                <span class="withdraw">提款</span>
+            </a>
+        </div>
+    </div>
+    <div class="box-wrap-list">
+        <p class="color-blue ft-30 _pl30 _pb20">账户管理</p>
+        <div class="box-wrap-bg-white">
+            <a class="ui-item " href="/user/account/personal.html">
+                <span><i class="icon-renwu color-dark-red"></i> 修改个人资料</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+            <a class="ui-item" href="/user/account/changePwd.html">
+                <span><i class="icon-mima1 color-dark-red"></i> 修改密码</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+            <a class="ui-item" href="/user/account/binding.html">
+                <span><i class="icon-xinyongqiahuankuan color-dark-red"></i> 绑定银行卡/支付宝</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+        </div>
+    </div>
+    <div class="box-wrap-list">
+        <p class="color-blue ft-30 _pl30 _pb20">资金管理</p>
+        <div class="box-wrap-bg-white">
+            <a class="ui-item " href="/user/deposit/index.html">
+                <span><i class="icon-shoukuan color-blue"></i> 存款</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+            <a class="ui-item" href="/user/withdraw.html">
+                <span><i class="icon-invest color-blue"></i> 提款</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+            <a class="ui-item" href="transfer.html">
+                <span><i class="icon-dollar color-blue"></i> 转账</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+        </div>
+    </div>
+    <div class="box-wrap-list">
+        <p class="color-blue ft-30 _pl30 _pb20">自助中心</p>
+        <div class="box-wrap-bg-white">
+            <a class="ui-item " href="betRecord.html">
+                <span><i class="icon-sousuo1 color-orange"></i> 自助流水查询</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+        </div>
+    </div>
+    <div class="box-wrap-list">
+        <p class="color-blue ft-30 _pl30 _pb20">报表查询</p>
+        <div class="box-wrap-bg-white">
+            <a class="ui-item " href="/user/report/entryAndExit.html">
+                <span><i class="icon-jizhang color-green"></i> 出入款记录</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+            <a class="ui-item " href="/user/report/transferRecord.html">
+                <span><i class="icon-sousuo color-green"></i> 转账记录查询</span>
+                <span><i class="icon-31fanhui2"></i> </span>
+            </a>
+        </div>
+    </div>
+    <!--底部导航-->
+    <div class="ui-tabbar-footer">
+        <div class>
+            <a href="/">
+                <div class="icons-box"><i class="icon-zhuye-copy"></i></div>
+                <span>首页</span>
+            </a>
+        </div>
+        <div>
+            <a href="/topic/live">
+                <div class="icons-box"><i class="icon-fanpai"></i></div>
+                <span>真人游戏</span>
+            </a>
+        </div>
+        <div class="current">
+            <a href="/user/index.html">
+                <div class="icons-box"><i class="icon-renwu"></i></div>
+                <span>个人中心</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

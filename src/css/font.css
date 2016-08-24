@@ -1,0 +1,82 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 常用字体、大小
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+.size-small {
+    font-size: .8em;
+    line-height: 1.5em;
+}
+
+.size-normal {
+    font-size: 14px;
+}
+
+.size-big {
+    font-size: 1.28em;
+    line-height: 1.1em;
+}
+/*新版本*/
+.ft-song{
+    font-family: '宋体';
+}
+.ft-n{
+    font-weight: normal;
+}
+
+.ft-b{
+    font-weight: bold;
+}
+.ft-12{
+    font-size:.12rem;
+}
+.ft-14{
+    font-size:.14rem;
+}
+.ft-16{
+    font-size:.16rem;
+}
+.ft-18{
+    font-size:.18rem;
+}
+.ft-20{
+    font-size:.20rem;
+}
+.ft-22{
+    font-size:.22rem;
+}
+.ft-24{
+    font-size:.24rem;
+}
+.ft-26{
+    font-size:.26rem;
+}
+.ft-28{
+    font-size:.28rem;
+}
+.ft-30{
+    font-size:.30rem;
+}
+.ft-32{
+    font-size:.32rem;
+}
+.ft-34{
+    font-size:.34rem;
+}
+.ft-36{
+    font-size:.36rem;
+}
+.ft-40{
+    font-size:.40rem;
+}
+.ft-48{
+    font-size:.48rem;
+}
+.ft-60{
+    font-size:.6rem;
+}
+.ft-80{
+    font-size:.8rem;
+}

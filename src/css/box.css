@@ -1,0 +1,270 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 常用宽、高、内外边距
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+.mt0 {
+    margin-top: 0 !important;
+}
+.mt20 {
+    margin-top: 20px !important;
+}
+.ml10{
+    margin-left: 10px !important;
+}
+.ml20 {
+    margin-left: 20px !important;
+}
+
+.mlr15 {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.mlr20 {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mtb0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.pt10 {
+    padding-top: 10px !important;
+}
+
+.ptb0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important
+}
+
+.ptb5 {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important
+}
+
+.ptb10 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important
+}
+
+.plr10 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.pr3 {
+    padding-right: 3px !important;
+}
+.pr10{
+    padding-right: 10px !important;
+}
+.pr20{
+    padding-right: 20px !important;
+}
+
+/*边距 _下划线开头的为新版通用*/
+/*上外边距*/
+._mt0{
+    margin-top: 0 !important;
+}
+._mt10{
+    margin-top: 0.1rem !important;
+}
+._mt20{
+    margin-top: 0.2rem !important;
+}
+._mt30{
+    margin-top: 0.3rem !important;
+}
+._mt40{
+    margin-top: 0.4rem !important;
+}
+._mt50{
+    margin-top: 0.5rem !important;
+}
+._mt60{
+    margin-top: 0.6rem !important;
+}
+._mt70{
+    margin-top: 0.7rem !important;
+}
+._mt80{
+    margin-top: 0.8rem !important;
+}
+._mt90{
+    margin-top: 0.9rem !important;
+}
+/*负margin-top*/
+._fmt10{
+    margin-top: -0.1rem !important;
+}
+._fmt20{
+    margin-top: -0.2rem !important;
+}
+._fmt30{
+    margin-top: -0.3rem !important;
+}
+._fmt40{
+    margin-top: -0.4rem !important;
+}
+._fmt80{
+    margin-top: -0.8rem !important;
+}
+/*下外边距*/
+._mb0{
+    margin-bottom: 0 !important;
+}
+._mb20{
+    margin-bottom:0.2rem!important;
+}
+._ml0{
+    margin-left:0px !important;
+}
+._mr0{
+    margin-right:0px !important;
+}
+._pt5{
+    padding-top: 0.05rem !important;
+}
+._pt10{
+    padding-top: 0.1rem !important;
+}
+._pt20{
+    padding-top: 0.2rem !important;
+}
+._pt30{
+    padding-top: 0.3rem !important;
+}
+._pt40{
+    padding-top: 0.4rem !important;
+}
+._pt50{
+    padding-top: 0.5rem !important;
+}
+._pt60{
+    padding-top: 0.6rem !important;
+}
+._pt70{
+    padding-top: 0.7rem !important;
+}
+._pb0{
+    padding-bottom: 0px !important;
+}
+._pb10{
+    padding-bottom: 0.1rem !important;
+}
+._pb20{
+    padding-bottom: 0.2rem !important;
+}
+._pb30{
+    padding-bottom: 0.3rem !important;
+}
+._pb40{
+    padding-bottom: 0.4rem !important;
+}
+._pl20{
+    padding-left: .2rem !important;
+}
+._pl30{
+    padding-left: .3rem !important;
+}
+._pr0{
+    padding-right: 0px !important;
+}
+._pr30{
+    padding-right: .3rem !important;
+}
+._plr0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+._plr20{
+    padding-left: .2rem !important;
+    padding-right: .2rem !important;
+}
+._plr25{
+    padding-left: .25rem !important;
+    padding-right: .25rem !important;
+}
+._plr30{
+    padding-left: .3rem !important;
+    padding-right: .3rem !important;
+}
+._plr50{
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+}
+._plr60{
+    padding-left: .6rem !important;
+    padding-right: .6rem !important;
+}
+._plr80{
+    padding-left: .8rem !important;
+    padding-right: .8rem !important;
+}
+._plr100{
+    padding-left: .100rem !important;
+    padding-right: .100rem !important;
+}
+/*上下边距*/
+._ptm5{
+    padding-top:0.05rem !important;
+    padding-bottom:0.05rem !important;
+}
+._ptm10{
+    padding-top:0.10rem !important;
+    padding-bottom:0.10rem !important;
+}
+._ptm20{
+    padding-top:0.20rem !important;
+    padding-bottom:0.20rem !important;
+}
+._ptm25{
+    padding-top:0.25rem !important;
+    padding-bottom:0.25rem !important;
+}
+._ptm30{
+    padding-top:0.30rem !important;
+    padding-bottom:0.30rem !important;
+}
+._ptm40{
+    padding-top:0.40rem !important;
+    padding-bottom:0.40rem !important;
+}
+/*常用宽高*/
+.ui-w50 {
+    width: 3.6em;
+    /*3.6*14=50*/
+}
+.w{
+    width:100%;
+}
+.w50{
+    width:0.5rem;
+}
+.w100{
+    width:1rem;
+}
+.w200{
+    width:2rem;
+}
+.w250{
+    width:2.5rem;
+}
+.h{
+    height:100%;
+}
+.h10{
+    height:.1rem!important;
+}
+.h20{
+    height:.2rem!important;
+}

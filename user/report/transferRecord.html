@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海洋城--转账记录查询</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/public/base.css"/>
+    <script type="text/javascript" src="/static/js/public/base.min.js"></script>
+    <style>
+        .ui-table-orange tr:nth-child(2n){
+            background: #f2f2f2;
+        }
+        .ui-form-item input{
+            padding-left: 1.7rem;
+            padding-right:0px;
+        }
+        .ui-form-item label{
+            background: #f0f2f5;
+            color: #232326;
+        }
+        .ui-row{
+
+            line-height:0.36rem;
+        }
+        .btn-wrap{
+            width:1.9rem;
+        }
+    </style>
+    <script>
+        $(function () {
+            //时间选择
+            $("#start,#end").calendar();
+        })
+    </script>
+</head>
+<body class="bg-main ft-normal">
+<header id="header"></header>
+    <div class="box-wrap-list">
+        <div class="box-wrap-bg-white ft-30">
+            <div class="ui-row">
+                <div class="ui-col ui-col-50">
+                    <div class="ui-form-item">
+                        <label>选择日期<i class="icon-xiala1 ft-40"></i></label> <input type="text" placeholder="开始时间" id="start"/>
+                    </div>
+                </div>
+                <div class="ui-col ui-col-50">
+                    <div class="ui-form-item">
+                        <label>选择日期<i class="icon-xiala1 ft-40"></i></label> <input type="text" placeholder="开始时间" id="end"/>
+                    </div>
+                </div>
+                <div class="ui-col _pr30 _pb20">
+                    <div class="btn-wrap fl">
+                        <div class="btn btn-sm btn-orange">查询</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-scroll">
+        <table class="ui-table ui-table-orange _mt20">
+            <tr>
+                <th>时间</th>
+                <th>平台</th>
+                <th>操作类型</th>
+                <th>平台</th>
+                <th>转入/出金额</th>
+                <th>钱包剩余额度</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

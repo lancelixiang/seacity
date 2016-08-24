@@ -1,0 +1,43 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 背景
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+.bg-blue {
+    background-color: #025b7c;
+}
+.bg-light-blue{
+    background-color: #1f8eb7;
+}
+.bg-dark-blue {
+    background-color: #26aba4;
+}
+.bg-orange {
+    background-color: #ff9125;
+}
+
+.bg-dark-orange {
+    background-color: #fc6826;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-dark {
+    background-color: #999;
+}
+
+.bg-gray {
+    background-color: #ccc;
+}
+
+.bg-main {
+    background-color: #f2f2f2 !important;
+}
+
+.bg-white {
+    background-color: #fff;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海洋城--提款</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/public/base.css"/>
+    <script type="text/javascript" src="/static/js/public/base.min.js"></script>
+    <style>
+        .ui-form-item input{
+            padding-left: 2.4rem;
+        }
+        .ui-form-item .focus-bg{
+            left:2.2rem;
+        }
+        .ui-form-item-r input {
+            padding-left: .1rem;
+        }
+    </style>
+    <script>
+        $(function(){
+            //短信倒计时
+            $('.count-down').click(function(){
+                //如果在倒计时中，阻止重新发送
+                if( $(this).data('send') ){
+                    return ;
+                }
+                $(this).data('send',true);
+                $(this).find('.word').text('秒后重发');
+                $(this).find('.second').text($(this).data('timestamp')).end().find('.word').text('秒后重发');
+                $('.count-down').countDown(function(){
+                    $(this).data('send',false);
+                    $(this).find('.second').text('').end().find('.word').text('重新发送');
+                })
+                //ajax
+            })
+
+            //提款选择
+            var drawing = ['支付宝', '中国工商银行3'];
+            $("#drawing").picker({
+                title: "请选择提款方式",
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values: drawing,
+                    }
+                ],
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+        })
+    </script>
+
+</head>
+<body class="bg-main ft-normal">
+    <header id="header"></header>
+    <div class="box-wrap-list">
+        <div class="box-wrap-bg-white ft-30">
+            <div class="ui-form-item">
+                <label>提款到:</label> <input type="text" placeholder="提款选择" id="drawing"/>
+                <span class="focus-bg"></span>
+                <i class="arrows icon-31fanhui2"></i>
+            </div>
+            <div class="ui-form-item">
+                <label>支付宝真实姓名:</label> <input type="text" placeholder="请输入支付宝真实姓名"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>支付宝账号名:</label> <input type="text" placeholder="请输入支付宝账号"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>提款金额:</label> <input type="text" placeholder="请输入提款金额"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>提款密码:</label> <input type="text" placeholder="请输入提款密码"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>手机号码:</label> <input type="text" placeholder="请输入手机号码"/>
+                <span class="focus-bg"></span>
+            </div>
+
+            <div class="ui-form-item ui-form-item-r">
+                <input type="text" placeholder="请输入验证码"/>
+                <span class="focus-bg"></span>
+                <div class="count-down sms" data-timestamp="60"><span class="second"></span><span class="word">发送短信</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrap _plr30 _mt90">
+        <a class="btn-lg btn-orange" href="#">确认付款</a>
+    </div>
+    <p class="_plr30 color-999 ft-26 _mt40 lh-s">为了您的资金安全，请保证您的预留手机【 158****4589 】畅通，首次提款需要您输入短信验证码。系统提示：您今日剩余提款次数3次，单笔最高提款额度50000.00元</p>
+</body>
+</html>

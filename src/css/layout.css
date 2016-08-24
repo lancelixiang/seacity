@@ -1,0 +1,164 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 结构样式 块、布局、对齐方式等
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+
+.content-small{
+    padding: 0 0.2rem;
+}
+.content-normal{
+    padding: 0 0.32rem;
+}
+
+/*外边框*/
+.box-wrap-list{
+    padding-top:0.2rem;
+    background: #f2f2f2;
+}
+.box-wrap-bg-white{
+    padding-left:0.3rem;
+    background: #fff;
+    border-top:1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ui-bottom {
+    position: fixed!important;
+    width: 100%;
+    max-width: 750px;
+    bottom: 0;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.ui-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.ui-text-justify {
+    text-align: justify;
+}
+/*文本两端对齐*/
+.ui-justify {
+    text-align: justify;
+    font-size:0;
+}
+
+.ui-justify:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    overflow: hidden
+}
+.ui-justify span{
+    font-size:0.24rem;
+    display: inline-block;
+}
+
+/*flex布局*/
+.ui-flex {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+}
+/*水平*/
+.ui-flex-ver {
+    -webkit-box-orient: vertical;
+}
+
+.ui-flex-pack-start {
+    -webkit-box-pack: start;
+}
+
+.ui-flex-pack-end {
+    -webkit-box-pack: end;
+}
+
+.ui-flex-pack-center {
+    -webkit-box-pack: center;
+}
+/*垂直*/
+.ui-flex-align-start {
+    -webkit-box-align: start;
+}
+
+.ui-flex-align-end {
+    -webkit-box-align: end;
+}
+
+.ui-flex-align-center {
+    -webkit-box-align: center;
+}
+/*两端对齐*/
+.ui-flex-justify{
+    -webkit-box-pack: justify;
+}
+/*在下常用列表布局的最后一行不需要下划线*/
+.ui-item:last-child{
+    border-bottom:none;
+}
+
+/*行*/
+.ui-item{
+    position: relative;
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -webkit-box-pack: justify;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+    border-bottom:1px solid #dcdcdc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ui-item > *{
+    margin-right:0.3rem;
+    display: block;
+}
+/*通用行 无边框*/
+.ui-item-n{
+    padding:0.05rem 0px;
+    border:none;
+    line-height:0.48rem;
+}
+/*虚线底*/
+.ui-item-dashed{
+    position: relative;
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -webkit-box-pack: justify;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:0.05rem 0px;
+    border-bottom:1px dashed #dcdcdc;
+}
+.ui-item-dashed > *{
+    display: block;
+}
+/*暂无想数据*/
+.ui-empty{
+    margin:0 auto;
+    width:3.55rem;
+    padding-top:4.1rem;
+    text-align: center;
+    font-size:0.32rem;
+    color: #666666;
+    background: url("/static/images/public/empty.png") center center no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+}

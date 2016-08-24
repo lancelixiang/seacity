@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海洋城--绑定银行卡</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/public/base.css"/>
+    <script type="text/javascript" src="/static/js/public/base.min.js"></script>
+    <script>
+        $(function () {
+            //选择银行
+            var bank = ['中国工商银行1', '中国工商银行3', '中国工商银行3', '中国工商银行4'];
+            $("#bank").picker({
+                title: "请选择选择银行",
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values: bank,
+                    }
+                ],
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+            //二级联动菜单 demo
+            //省
+            var province = ['湖南', '广西', '广东'];
+            //市区
+            var city = [
+                 ['长沙', '株洲', '怀化', '娄底', '益阳'],
+                 ['南宁', '桂林', '柳州', '玉林', '贵港'],
+                 ['广州', '深圳', '佛山', '湛江']
+            ];
+            //选择城市
+            $("#city").picker({
+                title: "请选择城市",
+                cols: [
+                    {
+                        textAlign: 'left',
+                        values:province ,
+                        onChange: function (picker) {
+                            var provinceIndex = picker.cols[0].activeIndex ;
+                            if(picker.cols[1].replaceValues){
+                                picker.cols[1].replaceValues(city[provinceIndex]);
+                            }
+                        }
+                    },
+                    {
+                        values: city[0],
+                        width: 120,
+                    }
+                ],
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+
+        })
+    </script>
+</head>
+<body class="bg-main ft-normal">
+    <header id="header"></header>
+    <div class="box-wrap-list">
+        <div class="box-wrap-bg-white ft-30">
+            <div class="ui-form-item">
+                <label>选择银行:</label> <input type="text" placeholder="请选择" id="bank"/>
+                <span class="focus-bg"></span>
+                <i class="arrows icon-31fanhui2"></i>
+            </div>
+            <div class="ui-form-item">
+                <label>选择城市:</label> <input type="text" placeholder="选择城市" id="city"/>
+                <span class="focus-bg"></span>
+                <i class="arrows icon-31fanhui2"></i>
+            </div>
+            <div class="ui-form-item">
+                <label>开户行:</label> <input type="text" placeholder="请输入开户行"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>开户姓名:</label> <input type="text" placeholder="请输入银行帐号"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>确认账号:</label> <input type="text" placeholder="请输入银行帐号"/>
+                <span class="focus-bg"></span>
+            </div>
+
+            <div class="ui-form-item ui-form-item-r">
+                <input type="text" placeholder="请输入验证码"/>
+                <span class="focus-bg"></span>
+                <div class="vcode"><img src="/static/images/public/vcode.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrap _plr30 _mt90">
+        <a class="btn-lg btn-orange" href="#">提交</a>
+    </div>
+</body>
+</html>

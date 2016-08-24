@@ -1,0 +1,152 @@
+
+.ui-mask,
+.msg-mask,
+.confirm-mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 90, 90, .5);
+    z-index: 1000;
+    -ms-touch-action: none;
+    touch-action: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ui-mask-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+.msg-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 5px 10px;
+    line-height: 18px;
+    font-size: 0.86em;
+    color: rgba(255, 255, 255, .9);
+    background-color: #ff9125;
+    z-index: 1101;
+    border-radius: 3px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ui-recharge-box,
+.ui-confirm-box {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    width: 70%;
+    height: 93px;
+    margin-left: -35%;
+    font-size: 0.86em;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1001;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ui-mask.opacity,
+.msg-mask.opacity,
+.confirm-mask.opacity,
+.msg-box.opacity,
+.ui-confirm-box.opacity,
+.ui-recharge-box.opacity {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.msg-box .msg-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: -3px -3px;
+    background-size: 24px 24px;
+}
+
+.msg-box .text {
+    white-space: nowrap;
+}
+
+.msg-box .msg-icon.msg-loading {
+    background-image: url(/static/images/public/msg-loading.png);
+    -webkit-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.msg-box .msg-icon.msg-success {
+    background-image: url(/static/images/public/msg-success.png);
+}
+
+.msg-box .msg-icon.msg-error {
+    background-image: url(/static/images/public/msg-error.png);
+}
+
+.msg-box .msg-icon.msg-warning {
+    background-image: url(/static/images/public/msg-warning.png);
+}
+
+.msg-box .msg-icon.msg-question {
+    background-image: url(/static/images/public/msg-question.png);
+}
+
+.ui-recharge-box p,
+.ui-confirm-box p {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+}
+
+.ui-recharge-box a,
+.ui-confirm-box a {
+    float: left;
+    width: 50%;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    color: #fff;
+}

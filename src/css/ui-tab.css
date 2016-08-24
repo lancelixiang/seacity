@@ -1,0 +1,95 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: tab选项卡
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+.ui-tab {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ui-tab-nav {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    display: box;
+    display: -webkit-box;
+    font-size: 0.32rem;
+    height: 0.86rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom:3px solid #dcdcdc;
+
+}
+.ui-tab-nav li {
+    width: 100%;
+    height: 0.86rem;
+    line-height: 0.86rem;
+    min-width: 70px;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center;
+    color: #555;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+    border-left:1px solid #dcdcdc;
+    transition:all .5s;
+}
+.ui-tab-nav li:nth-child(1){
+    border-left: 1px solid transparent;
+}
+.ui-tab-nav li.current {
+    color: #3baccc;
+    border-bottom: 3px solid #00a5e0
+}
+
+.ui-tab-nav li:active {
+    opacity: .8
+}
+
+/*底部导航*/
+.ui-tabbar-footer{
+    padding:0.15rem 0;
+    background: rgba(255,255,255,1);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #999999;
+    border-top: 1px solid #ddd;
+    font-size:0.28rem;
+    line-height:0.36rem;
+    z-index: 99;
+}
+
+.ui-tabbar-footer> div{
+    text-align: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.ui-tabbar-footer> div.current a{
+    color: #025b7c;
+}
+.ui-tabbar-footer a{
+    line-height:0.36rem;
+    color: #999;
+}
+
+.ui-tabbar-footer .icons-box{
+    line-height:0.36rem;
+    height:0.36rem;
+    font-size:0.4rem;
+    margin-bottom: 5px;
+}
+.ui-tabbar-footer .icons-box [class^='icon-'] {
+    line-height:0.36rem;
+    font-size:0.4rem;
+    margin: 0 auto;
+}

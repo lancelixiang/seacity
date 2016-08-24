@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海洋城--公司入款</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/public/base.css"/>
+    <script type="text/javascript" src="/static/js/public/base.min.js"></script>
+    <style>
+        .ui-form-item input{
+            padding-left: 2.3rem;
+        }
+        .ui-form-item .focus-bg{
+            left:2rem;
+        }
+        .ui-form-item:nth-child(1) input{
+
+            padding-right:0px;
+        }
+
+        .ui-form-item-r input {
+            padding-left: .1rem;
+        }
+    </style>
+    <script>
+        $(function () {
+            //选择银行
+            var pay = ['中国工商银行', '支付宝'];
+            $("#pay").picker({
+                title: "请选择存款的银行",
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values: pay,
+                    }
+                ],
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+        })
+    </script>
+</head>
+<body class="bg-main ft-normal">
+    <header id="header"></header>
+    <div class="box-wrap-list">
+        <div class="box-wrap-bg-white ft-30">
+            <div class="ui-form-item">
+                <label>选择存款的银行:</label> <input type="text" placeholder="必须与提款卡号/支付宝姓名一致" id="pay"/>
+                <span class="focus-bg"></span>
+                <i class="arrows icon-31fanhui2"></i>
+            </div>
+            <div class="ui-form-item">
+                <label>银行帐号:</label> <input type="text" placeholder="请输入银行帐号"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>开户人姓名:</label> <input type="text" placeholder="请输入开户人姓名"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>开户行:</label> <input type="text" placeholder="请输入开户行"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>存款金额:</label> <input type="text" placeholder="请输入存款金额"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>银行转账附言:</label> <input type="text" placeholder="附言"/>
+                <span class="focus-bg"></span>
+            </div>
+
+            <div class="ui-form-item ui-form-item-r">
+                <input type="text" placeholder="请输入验证码"/>
+                <span class="focus-bg"></span>
+                <div class="vcode"><img src="/static/images/public/vcode.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrap _plr30 _mt90">
+        <a class="btn-lg btn-orange" href="#">确认付款</a>
+    </div>
+    <p class="_plr30 color-999 ft-26 _mt40 lh-s">若您采用支付宝转账，请在支付宝转账页面存款“付款说明”处输入您的“转账附言”，否则无法实时到账。</p>
+</body>
+</html>

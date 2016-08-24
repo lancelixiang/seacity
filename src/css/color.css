@@ -1,0 +1,72 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 文字颜色
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+.color-normal {
+    color: #555;
+}
+
+.color-gray {
+    color: #999;
+}
+.color-dark-gray{
+    color: #c3c3c3;
+}
+.color-dark-red{
+    color: #e65a67;
+}
+.color-999{
+    color: #999;
+}
+.color-light-grey {
+    color: #d3d3d3;
+}
+
+.color-orange {
+    color: #ff9125;
+}
+
+.color-dark-orange {
+    color: #fbab7a;
+}
+.color-888{
+    color: #888;
+}
+.color-777{
+    color: #777;
+}
+.color-555{
+    color: #555;
+}
+.color-666{
+    color:#666;
+}
+.color-dark {
+    color: #444;
+}
+.color-444{
+    color:#444;
+}
+
+.color-333{
+    color: #333;
+}
+
+.color-white {
+    color: #fff;
+}
+.color-white-a{
+    color:#f3f3f3;
+}
+.color-blue {
+    color: #3baccc;
+}
+.color-green{
+    color: #20c0ba;
+}
+.color-red {
+    color: #d9382b;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "seacity-wap",
+  "version": "1.0.1",
+  "description": " ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiangchunlong lichunhao",
+  "license": "ISC",
+  "homepage": "http://m.seacity.com",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.8.7",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "run-sequence": "^1.2.2"
+  }
+}

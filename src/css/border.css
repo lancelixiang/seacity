@@ -1,0 +1,54 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 边框颜色
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+/*颜色*/
+.border-none{
+    border:none!important;
+}
+.border-radius-none{
+    border-radius: 0px!important;
+}
+.border-dashed{
+    border-style:dashed;
+}
+.border-b-none{
+    border-bottom:none!important;
+}
+.border-blue {
+    border: 1px solid #3baccc;
+}
+
+.border-orange {
+    border: 1px solid #ff9125;
+}
+
+.border-dark-orange {
+    border: 1px solid #fc6826;
+}
+
+.border-gray {
+    border: 1px solid #dcdcdc;
+}
+
+.border-top-gray {
+    border-top: 1px solid #dcdcdc;
+}
+
+.border-bottom-blue {
+   border-bottom: 1px solid #3baccc;
+}
+
+.border-bottom-gray {
+    border-bottom: 1px solid #dcdcdc;
+}
+.border-left-gray {
+    border-left: 1px solid #dcdcdc;
+}
+
+.border-right-gray {
+    border-right: 1px solid #dcdcdc;
+}

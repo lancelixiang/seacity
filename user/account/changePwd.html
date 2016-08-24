@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海洋城--修改密码</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/public/base.css"/>
+    <script type="text/javascript" src="/static/js/public/base.min.js"></script>
+    <script>
+        $(function(){
+            //密码类型选择
+            var password =  ['aaa', 'bbb', 'ccc', 'ddd', 'gg']
+            $("#password").picker({
+                title: "请选择登陆密码类型",
+                value:[password[2]],
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values:password
+                    }
+                ],
+                formatValue : function (picker,values,displayValues) {
+                    return 123;
+                },
+                onClose: function(picker) {
+                    console.log("close");
+                }
+            });
+
+        })
+    </script>
+
+</head>
+<body class="bg-main ft-normal">
+    <header id="header"></header>
+    <div class="box-wrap-list">
+        <div class="box-wrap-bg-white ft-30">
+            <div class="ui-form-item">
+                <label>密码类型:</label> <input type="text" placeholder="登陆密码" id="password" value=""/>
+                <span class="focus-bg"></span>
+                <i class="arrows icon-31fanhui2"></i>
+            </div>
+            <div class="ui-form-item">
+                <label>旧密码:</label> <input type="text" placeholder="请输入您的身份证号"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>新密码:</label> <input type="text" placeholder="请输入您的手机号码"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item">
+                <label>确认密码:</label> <input type="text" placeholder="请输入您的电子邮箱地址"/>
+                <span class="focus-bg"></span>
+            </div>
+            <div class="ui-form-item ui-form-item-r">
+                <input type="text" placeholder="请输入验证码"/>
+                <span class="focus-bg"></span>
+                <div class="vcode"><img src="/static/images/public/vcode.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrap _plr30 _mt90">
+        <a class="btn-lg btn-orange" href="#">提交</a>
+    </div>
+</body>
+</html>

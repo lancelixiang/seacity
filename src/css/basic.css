@@ -1,0 +1,185 @@
+/*//
+// +----------------------------------------------------------------------
+// | 说明: 常用基础样式
+// +----------------------------------------------------------------------
+// | 最后修改时间: 2016-7-05
+// +----------------------------------------------------------------------
+*/
+.clearfix:before {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: '.';
+}
+
+.clear {
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+.ma {
+    margin: 0 auto;
+}
+.none{
+    display: none !important;
+}
+.ui-none {
+    display: none !important;
+}
+.block{
+    display: block;
+}
+.inline{
+    display: inline;
+}
+.stop{
+    height: 100%;
+    overflow: hidden;
+}
+/*行高
+ *说明 ft-normal中的行高为0.6rem
+*/
+.lh-n{
+    line-height:0.48rem;
+}
+/*小字体行高*/
+.lh-s{
+    line-height:0.36rem;
+}
+
+.ft-normal{
+    line-height:0.6rem;
+    font-size:0.28rem;
+}
+/*文本相关*/
+.t-left {
+    text-align: left;
+}
+.t-center {
+    text-align: center;
+}
+.t-right{
+    text-align: right;
+}
+/*文本溢出时,用三个...表示*/
+.t-dot{
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*倒角*/
+.ui-radius {
+    border-radius: 3px;
+}
+
+/*圆形*/
+.ui-circle{
+    border-radius: 100%;
+}
+/*高斯模糊*/
+.ui-blur {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+}
+.ui-text-shadow {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+/*不同宽，body默认字体行间距设置*/
+@media only screen and (min-width: 320px) {
+    html {
+        font-size:42.6px;
+    }
+}
+@media only screen and (min-width: 360px) {
+    html {
+        font-size:48px;
+    }
+    body {
+        font: 16px/32px 'Microsoft YaHei', arial, sans-serif;
+    }
+
+    .size-normal {
+        font-size: 16px;
+    }
+
+    .ui-list li input,
+    textarea {
+        font-size: 16px;
+    }
+
+    .ui-logo {
+        width: 114px;
+        height: 114px;
+        background-size: 114px 114px;
+    }
+}
+@media only screen and (min-width: 375px){
+    html {
+        font-size:50px;
+    }
+}
+@media only screen and (min-width: 414px) {
+    html {
+        font-size:55.2px;
+    }
+    body {
+        font: 18px/36px 'Microsoft YaHei', arial, sans-serif;
+    }
+
+    .size-normal {
+        font-size: 18px;
+    }
+
+    .ui-list li input,
+    textarea {
+        font-size: 18px;
+    }
+
+    .ui-logo {
+        width: 128px;
+        height: 128px;
+        background-size: 128px 128px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    body {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .header_fixed {
+        max-width: 580px;
+        left: 50%;
+        margin-left: -300px;
+    }
+
+    .ui-content-sub {
+        position: absolute;
+        left: 50%;
+        width: 600px;
+        margin-left: -300px;
+    }
+}
